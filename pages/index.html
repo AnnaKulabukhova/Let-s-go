@@ -4,55 +4,30 @@
   <meta charset="UTF-8" />
   <title>le's go</title>
 </head>
-<body class="pege-body">
+<body class="page-body">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
         <img src="../image/logotype-mobile.svg" width="96px" height="15px" alt="Логотип компании Погнали?" />
       </a>
-
-      <div class="header__navigation navigation">
-        <button class="navigation__button" type="button"></button>
-        <ul class="navigation__list">
-          <li class="navigation__item">о сервисе</li>
-          <li class="navigation__item">направления</li>
-          <li class="navigation__item">попутчики</li>
-        </ul>
-        <a class="navigaion__link-login" href="#">авторизация</a>
-        <div class="navigation__contact">
-          <a class="main-navigation__phone" href="tel:+78005558628">
-            <img src="../image/phone.svg" width="16px" height="16px" alt="Позвонить" />
-          </a>
-          <a class="main-navigation__email" href="mailto:mail@htmlacademy.ru">
-            <img src="../image/email.svg" width="14px" height="11px" alt="Позвонить" />
-          </a>
-
-          <ul class="navigation__social-list socials">
-            <li class="socials__item">
-              <a class="socials__item-link" href="#">
-                <img src="../image/facebook.svg" width="13px" height="27px" alt="facebook"/>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__item-link" href="#">
-                <img src="../image/vk.svg" width="30px" height="16px" alt="Вконтакте"/>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__item-link" href="#">
-                <img src="../image/instagram.svg" width="24px" height="24px" alt="instagram"/>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <button class="navigation__button" type="button"></button>
     </div>
   </header>
 
+  
   <main>
     <section class="hero">
       <div class="hero__wrapper">
         <h1 class="hero__title">В путешествие с крутыми попутчиками!</h1>
+        <div class="user-list"></div>
+          <a class="user-list__login login" href="#">авторизация</a>
+          <a class="user-list__phone" href="tel:+78005558628">
+            <img src="../image/phone.svg" width="16px" height="16px" alt="Позвонить" />
+          </a>
+          <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
+            <img src="../image/email.svg" width="14px" height="11px" alt="Позвонить" />
+          </a>
+
         <figure class="hero__quote quote">
           <blockquote class="quote__text">«Лучшее приложение, что я видел в жизни!»</blockquote>
           <figcaption class="quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</figcaption>
@@ -78,6 +53,7 @@
       </div>
     </section>
 
+
     <section class="service">
       <div class="service__wrapper">
         <h2 class="service__title title">О сервисе</h2>
@@ -86,6 +62,7 @@
         <a class="service__button button" href="#">Подробнее</a>
       </div>
     </section>
+
 
     <section class="direction">
       <div class="direction__wrapper">
@@ -134,6 +111,7 @@
         <a class="direction__button button" href="#">Показать все</a>
       </div>
     </section>
+
 
     <section class="companion">
       <div class="companion__wrapper">
@@ -235,6 +213,7 @@
       </div>
     </section>
 
+
     <section class="price">
       <div class="price__wrapper">
         <h2 class="price__title title">Добавьте свой профиль</h2>
@@ -269,6 +248,7 @@
       </div>
     </section>
 
+
     <section class="registration">
       <div class="registraion__wrapper">
         <h2 class="registration__title title">Заинтересовались?</h2>
@@ -292,6 +272,7 @@
       </div>
     </section>
     
+
     <section class="locations">
       <div class="location__block">
         <img class="locations__img" src="../image/local.svg" width="31px" height="42px" alt="Местонахождение" />
@@ -302,21 +283,22 @@
 
   </main>
     
+
   <footer class="footer">
     <img src="../image/logo-mobile-2.svg" width="96px" height="15px" alt="Логотип компании" />
-    <ul class="footer__list socials">
-      <li class="socials__item">
-        <a class="socials__item-link" href="#">
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link" href="#">
           <img src="../image/facebook.svg" width="13px" height="27px" alt="facebook"/>
         </a>
       </li>
-      <li class="socials__item">
-        <a class="socials__item-link" href="#">
+      <li class="footer__social-item">
+        <a class="footer__social-link" href="#">
           <img src="../image/vk.svg" width="30px" height="16px" alt="Вконтакте"/>
         </a>
       </li>
-      <li class="socials__item">
-        <a class="socials__item-link" href="#">
+      <li class="footer__social-item">
+        <a class="footer__social-link" href="#">
           <img src="../image/instagram.svg" width="24px" height="24px" alt="instagram"/>
         </a>
       </li>
@@ -326,5 +308,77 @@
       <img src="../image/html-academy.svg" width="27px" height="34px"  alt="иконка разработчика" />
     </div>
   </footer>
+
+
+  <section class="modal-navigation">
+    <div class="modal-navigation__wrapper">
+      <div class="modal-navigation__inner">
+        <img src="../image/logo-mobile-2.svg" width="100px" height="15px" alt="Логотип компании Погнали" />
+        <button class="modal-navigation__button" type="button"></button>
+      </div>
+
+      <ul class="modal-navigation__list">
+        <li class="modal-navigation__item">о сервисе</li>
+        <li class="modal-navigation__item">направления</li>
+        <li class="modal-navigation__item">попутчики</li>
+      </ul>
+
+      <a class="modal-navigation__login login" href="#">авторизация</a>
+      
+      <div class="modal-navigation__contact">
+        <a class="modal-navigation__phone" href="tel:+78005558628">
+          <img src="../image/phone.svg" width="16px" height="16px" alt="Позвонить" />
+        </a>
+        <a class="modal-navigation__email" href="mailto:mail@htmlacademy.ru">
+          <img src="../image/email.svg" width="14px" height="11px" alt="Позвонить" />
+        </a>
+      </div>
+
+        <ul class="modal-navigation__social-list">
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/facebook.svg" width="13px" height="27px" alt="facebook"/>
+            </a>
+          </li>
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/vk.svg" width="30px" height="16px" alt="Вконтакте"/>
+            </a>
+          </li>
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/instagram.svg" width="24px" height="24px" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </section>
+
+
+  <section class="modal-bisness">
+    <div class="modal-bisness__wrapper">
+      <h2 class="modal-bisness__title title">Бизнес-тарифы</h2>
+      <div class="modal-bisness__list">
+        <div class="modal-bisness__price">
+          <span class="modal-bisness__price-text">Реклама у блоггера</span>
+          <span class="modal-bisness__price-text">300 000 руб./пост</span>
+        </div>
+        <div class="modal-bisness__price">
+          <span class="modal-bisness__price-text">Накрутка подписчиков</span>
+          <span class="modal-bisness__price-text">от 1 руб./шт.</span>
+        </div>
+        <div class="modal-bisness__price">
+          <span class="modal-bisness__price-text">Лайки от ботов</span>
+          <span class="modal-bisness__price-text">от 20 коп./лайк</span>
+        </div>
+        <div class="modal-bisness__price">
+          <span class="modal-bisness__price-text">Ваш продакт-плейсмент </span>
+          <span class="modal-bisness__price-text">Индивидуально</span>
+        </div>
+      </div>
+      <button class="modal-bisness__button" type="button">Закрыть окно</button>
+    </div>
+  </section>
+
 </body>
 </html>
