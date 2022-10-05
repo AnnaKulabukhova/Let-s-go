@@ -2,12 +2,12 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Catalog</title>
+  <title>Попутчики</title>
 </head>
 <body class="page-body">
-  <header>
+  <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img src="../image/logotype-mobile.svg" width="96px" height="15px" alt="Логотип компании Погнали?" />
       </a>
       <button class="navigation__button" type="button"></button>
@@ -21,8 +21,98 @@
       <div class="filter-country__wrapper">
         <img src="../image/icon_filter.svg" width="15px" height="10px" alt="Иконка фильтра"/>
         <h2 class="filter-country__title">Фильтрация по странам:</h2>
-        <button class="filter-country__button">...</button>
+        <button class="filter-country__button filter-country__button--close"></button>
       </div>
+
+      
+        <div class="modal-filter">
+          <div class="modal-filter__block">
+            <img src="../image/icon_filter.svg" width="15px" height="10px" alt="Иконка фильтра"/>
+            <h2 class="modal-filter__title">Фильтрация по странам:</h2>
+            <button class="modal-filter__button"></button>
+          </div>
+          <ul class="modal-filter__continent-list">
+            <li class="modal-filter__continent-item modal-filter__continent-item--add">Европа</li>
+            <li class="modal-filter__continent-item">Азия</li>
+            <li class="modal-filter__continent-item">америка</li>
+            <li class="modal-filter__continent-item">острова</li>
+          </ul>
+          <table class="modal-filter__table table-alphabet">
+            <tr class="table-alphabet__row">
+              <td class="table-alphabet__cell table-alphabet__catalog-cell--select">а</td>
+              <td class="table-alphabet__cell">б</td>
+              <td class="table-alphabet__cell">в</td>
+              <td class="table-alphabet__cell">г</td>
+              <td class="table-alphabet__cell">д</td>
+            </tr>
+            <tr class="table-alphabet__row">
+              <td class="table-alphabet__cell">е</td>
+              <td class="table-alphabet__cell">з</td>
+              <td class="table-alphabet__cell">и</td>
+              <td class="table-alphabet__cell">к</td>
+              <td class="table-alphabet__cell">л</td>
+            </tr>
+            <tr class="table-alphabet__row">
+              <td class="modal-filter__table-cell">м</td>
+              <td class="modal-filter__table-cell">н</td>
+              <td class="modal-filter__table-cell">о</td>
+              <td class="modal-filter__table-cell">п</td>
+              <td class="modal-filter__table-cell">р</td>
+            </tr>
+            <tr class="table-alphabet__row">
+              <td class="table-alphabet__cell">с</td>
+              <td class="table-alphabet__cell">т</td>
+              <td class="table-alphabet__cell">у</td>
+              <td class="table-alphabet__cell">ф</td>
+              <td class="table-alphabet__cell">х</td>
+            </tr>
+            <tr class="table-alphabet__row">
+              <td class="table-alphabet__cell">ч</td>
+              <td class="table-alphabet__cell">ш</td>
+              <td class="table-alphabet__cell">э</td>
+              <td class="table-alphabet__cell">ю</td>
+              <td class="table-alphabet__cell">я</td>
+            </tr>
+          </table>
+          <ul class="modal-filter__country-list country-list">
+            <li class="country-list__item"> 
+              <a class="country-list__link" href="Australia">Австралия</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Austria">Австрия</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Azerbaijan">Азербайджан</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Albania">Албания</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Algeria">Алжир</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Angola">Ангола</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Andorra">Андорра</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Antigua-and-Barbuda">Антигуа и Барбуда</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Argentina">Аргентина</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Armenia">Армения</a>
+            </li>
+            <li class="country-list__item">
+              <a class="country-list__link" href="Afghanistan">Афганистан</a>
+            </li>
+          </ul>
+          <button class="modal-filter__button" type="button">Свернуть</button>
+        </div>
+      
+
     </section>
 
  
@@ -33,6 +123,29 @@
           
           <fieldset class="filter__control control">
             <legend class="control__title">хобби</legend>
+            <ul class="control__list">
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="Gym" checked>
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Спортзал</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="Hookah">
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Кальян</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="Диван">
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Диван</span>
+                </label>
+              </li>
+            </ul>
             <buttom class="conrtol__buttom"></buttom>
           </fieldset >
           
@@ -41,22 +154,22 @@
             <ul class="control__list">
               <li class="control__item">
                 <label class="control__label-checkbox">
-                  <input class="control__input-checkbox" type="checkbox" name="rock">
-                  <div class="control__block-check"></div>
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="rock" checked>
+                  <div class="control__block-check block-check"></div>
                   <span class="control__text-checkbox">Тяжелый рок</span>
                 </label>
               </li>
               <li class="control__item">
                 <label class="control__label-checkbox">
-                  <input class="control__input-checkbox" type="checkbox" name="rap">
-                  <div class="control__block-check"></div>
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="rap">
+                  <div class="control__block-check block-check"></div>
                   <span class="control__text-checkbox">Русский рэп</span>
                 </label>
               </li>
               <li class="control__item">
                 <label class="control__label-checkbox">
-                  <input class="control__input-checkbox" type="checkbox" name="dance">
-                  <div class="control__block-check"></div>
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="dance">
+                  <div class="control__block-check block-check"></div>
                   <span class="control__text-checkbox">Евроденс</span>
                 </label>
               </li>
@@ -66,6 +179,29 @@
           
           <fieldset class="filter__control control">
             <legend class="control__title">еда</legend>
+            <ul class="control__list">
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="meat-eater" checked>
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Мясоед</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="pn">
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Сидит на ПП</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label-checkbox">
+                  <input class="control__input-checkbox input-checkbox" type="checkbox" name="vegan">
+                  <div class="control__block-check block-check"></div>
+                  <span class="control__text-checkbox">Веган-сыроед</span>
+                </label>
+              </li>
+            </ul>
             <buttom class="conrtol__buttom"></buttom>
           </fieldset>
           
@@ -131,8 +267,12 @@
     <div class="catalog-card">
       <div class="catalog-card__wrapper">
         <div class="catalog-card__person">
-          <img class="catalog-card__avatar" src="../image/card-1.jpg" width="70px" height="70px" alt="Фотография пользователя" />
-          <h2 class="catalog-card__name">Таня Фирсова</h2>
+          <a href="#">
+            <img class="catalog-card__avatar" src="../image/card-1.jpg" width="70px" height="70px" alt="Фотография пользователя" />
+          </a>
+          <a href="#">
+            <h2 class="catalog-card__name">Таня Фирсова</h2>
+          </a>
         </div>
 
         <div class="catalog-card__liked">
@@ -197,7 +337,7 @@
             <span class="catalog-card__level-text">99</span>
           </div>
         </div>
-        <a class="catalog-card__buttom" href="#">ПОзвать!</a>
+        <button class="catalog-card__buttom" href="#">ПОзвать!</button>
       </div>
     </div>
 
@@ -205,8 +345,12 @@
     <div class="catalog-card">
       <div class="catalog-card__wrapper">
         <div class="catalog-card__person">
-          <img class="catalog-card__avatar" src="../image/card-2.jpg" width="70px" height="70px" alt="Фотография пользователя" />
-          <h2 class="catalog-card__name">Петя Демин</h2>
+          <a href="#">
+            <img class="catalog-card__avatar" src="../image/card-2.jpg" width="70px" height="70px" alt="Фотография пользователя" />
+          </a>
+          <a href="#">
+            <h2 class="catalog-card__name">Петя Демин</h2>
+          </a>
         </div>
 
         <div class="catalog-card__liked">
@@ -275,8 +419,12 @@
     <div class="catalog-card">
       <div class="catalog-card__wrapper">
         <div class="catalog-card__person">
-          <img class="catalog-card__avatar" src="../image/card-avatar-3.jpg" width="70px" height="70px" alt="Фотография пользователя" />
-          <h2 class="catalog-card__name">Марк Смолов</h2>
+          <a href="#">
+            <img class="catalog-card__avatar" src="../image/card-avatar-3.jpg" width="70px" height="70px" alt="Фотография пользователя" />
+          </a>
+          <a href="#">
+            <h2 class="catalog-card__name">Марк Смолов</h2>
+          </a>
         </div>
 
         <div class="catalog-card__liked">
@@ -349,8 +497,12 @@
     <div class="catalog-card">
       <div class="catalog-card__wrapper">
         <div class="catalog-card__person">
-          <img class="catalog-card__avatar" src="../image/card-avatar-4.jpg" width="70px" height="70px" alt="Фотография пользователя" />
-          <h2 class="catalog-card__name">Лариса Роговая</h2>
+          <a href="#">
+            <img class="catalog-card__avatar" src="../image/card-avatar-4.jpg" width="70px" height="70px" alt="Фотография пользователя" />
+          </a>
+          <a href="#">
+            <h2 class="catalog-card__name">Лариса Роговая</h2>
+          </a>
         </div>
 
         <div class="catalog-card__liked">
@@ -419,7 +571,7 @@
 
     <div class="more">
       <div class="more__wrapper">
-        <button class="more__button" type="button">показать еще</button>
+        <a href="#" class="more__button">показать еще</a>
       </div>
     </div>
 
@@ -440,7 +592,7 @@
   </main>
 
 
-  <footer>
+  <footer class="footer">
     <div class="footer__wraper">
       <img src="../image/logo-mobile-2.svg" width="96px" height="15px" alt="Логотип компании" />
       <ul class="footer__social-list">
@@ -461,73 +613,15 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        <span class="footer__copyright-text">Разработано</span>
-        <img src="../image/html-academy.svg" width="27px" height="34px"  alt="иконка разработчика" />
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/">Разработано</a>
+        <a href="https://htmlacademy.ru/">
+          <img src="../image/html-academy.svg" width="27px" height="34px"  alt="иконка разработчика" />
+        </a>
       </div>
     </div>
   </footer>
   
 
-  <section class="modal-search">
-    <div class="modal-search__wrapper">
-      <ul class="modal-search__continent-list">
-        <li class="modal-search__continent-list modal-filter__continent-list--add">Европа</li>
-        <li class="modal-search__continent-list">Азия</li>
-        <li class="modal-search__continent-list">америка</li>
-        <li class="modal-search__continent-list">острова</li>
-      </ul>
-      <table class="modal-search__table">
-        <tr class="modal-search__row">
-          <td class="modal-search__table-cell">а</td>
-          <td class="modal-search__table-cell">б</td>
-          <td class="modal-search__table-cell">в</td>
-          <td class="modal-search__table-cell">г</td>
-          <td class="modal-search__table-cell">д</td>
-        </tr>
-        <tr class="modal-search__table-row">
-          <td class="modal-search__table-cell">е</td>
-          <td class="modal-search__table-cell">з</td>
-          <td class="modal-search__table-cell">и</td>
-          <td class="modal-search__table-cell">к</td>
-          <td class="modal-search__table-cell">л</td>
-        </tr>
-        <tr class="modal-search__table-row">
-          <td class="modal-search__table-cell">м</td>
-          <td class="modal-search__table-cell">н</td>
-          <td class="modal-search__table-cell">о</td>
-          <td class="modal-search__table-cell">п</td>
-          <td class="modal-search__table-cell">р</td>
-        </tr>
-        <tr class="modal-search__table-row">
-          <td class="modal-search__table-cell">с</td>
-          <td class="modal-search__table-cell">т</td>
-          <td class="modal-search__table-cell">у</td>
-          <td class="modal-search__table-cell">ф</td>
-          <td class="modal-search__table-cell">х</td>
-        </tr>
-        <tr class="modal-search__table-row">
-          <td class="modal-search__table-cell">ч</td>
-          <td class="modal-search__table-cell">ш</td>
-          <td class="modal-search__table-cell">э</td>
-          <td class="modal-search__table-cell">ю</td>
-          <td class="modal-search__table-cell">я</td>
-        </tr>
-      </table>
-      <ul class="modal-search__country-list">
-        <li class="modal-search__country-list">Австралия</li>
-        <li class="modal-search__country-list">Австрия</li>
-        <li class="modal-search__country-list">Азербайджан</li>
-        <li class="modal-search__country-list">Албания</li>
-        <li class="modal-search__country-list">Алжир</li>
-        <li class="modal-search__country-list">Ангола</li>
-        <li class="modal-search__country-list">Андорра</li>
-        <li class="modal-search__country-list">Антигуа и Барбуда</li>
-        <li class="modal-search__country-list">Аргентина</li>
-        <li class="modal-search__country-list">Армения</li>
-        <li class="modal-search__country-list">Афганистан</li>
-      </ul>
-      <button class="modal-search__button" type="button">Свернуть</button>
-    </div>
-  </section>
+ 
 </body>
 </html>

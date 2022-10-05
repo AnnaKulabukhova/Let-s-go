@@ -2,9 +2,59 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>le's go</title>
+  <title>Главная страница</title>
 </head>
 <body class="page-body">
+  <section class="modal-navigation">
+    <div class="modal-navigation__wrapper">
+      <div class="modal-navigation__inner">
+        <img src="../image/logo-mobile-2.svg" width="100px" height="15px" alt="Логотип компании Погнали" />
+        <button class="modal-navigation__button" type="button"></button>
+      </div>
+
+      <ul class="modal-navigation__list">
+        <li class="modal-navigation__item">
+          <a href="#service">о сервисе</a>
+        </li>
+        <li class="modal-navigation__item">
+          <a href="#direction">направления</a>
+        </li>
+        <li class="modal-navigation__item">
+          <a href="#companion">попутчики</a>
+        </li>
+      </ul>
+
+      <a class="modal-navigation__login login" href="#">авторизация</a>
+      
+      <div class="modal-navigation__contact">
+        <a class="modal-navigation__phone" href="tel:+78005558628">
+          <img src="../image/phone.svg" width="16px" height="16px" alt="Позвонить" />
+        </a>
+        <a class="modal-navigation__email" href="mailto:mail@htmlacademy.ru">
+          <img src="../image/email.svg" width="14px" height="11px" alt="Позвонить" />
+        </a>
+      </div>
+
+        <ul class="modal-navigation__social-list">
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/facebook.svg" width="13px" height="27px" alt="facebook"/>
+            </a>
+          </li>
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/vk.svg" width="30px" height="16px" alt="Вконтакте"/>
+            </a>
+          </li>
+          <li class="modal-navigation__social-item">
+            <a class="modal-navigation__social-link" href="#">
+              <img src="../image/instagram.svg" width="24px" height="24px" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </section>
+
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
@@ -54,17 +104,17 @@
     </section>
 
 
-    <section class="service">
+    <section class="service" id="service">
       <div class="service__wrapper">
         <h2 class="service__title title">О сервисе</h2>
         <p class="service__info">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-        <p class="service__text">А если найдете кого-то близкого по духу — <br /> скорее зовите в совместный трип!</p>
+        <p class="service__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         <a class="service__button button" href="#">Подробнее</a>
       </div>
     </section>
 
 
-    <section class="direction">
+    <section class="direction" id="direction">
       <div class="direction__wrapper">
         <div class="direction__block">
           <h2 class="diection__title title">Направления</h2>
@@ -108,12 +158,12 @@
             </div>
           </li>
         </ul>
-        <a class="direction__button button" href="#">Показать все</a>
+        <a class="direction__button button" href="form.html">Показать все</a>
       </div>
     </section>
 
 
-    <section class="companion">
+    <section class="companion" id="companion">
       <div class="companion__wrapper">
         <div class="companion__block">
           <h2 class="companion__title title">Попутчики</h2>
@@ -209,7 +259,7 @@
             </div>
           </div>
         </div>
-        <a class="companion__button button" href="#">Показать всех</a>
+        <a class="companion__button button" href="catalog.html">Показать всех</a>
       </div>
     </section>
 
@@ -252,7 +302,7 @@
     <section class="registration">
       <div class="registraion__wrapper">
         <h2 class="registration__title title">Заинтересовались?</h2>
-        <p class="registration__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <span class="registration__link">авторизуйтесь.</span></p>
+        <p class="registration__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="registration__link" href="#">авторизуйтесь.</a></p>
         <form class="registration__form">
           <input class="registration__input" type="email" name="registration"/>
           <button class="registration__button button" type="submit"></button>
@@ -305,56 +355,16 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        <span class="footer__copyright-text">Разработано</span>
-        <img src="../image/html-academy.svg" width="27px" height="34px"  alt="иконка разработчика" />
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/">Разработано</a>
+        <a href="https://htmlacademy.ru/">
+          <img src="../image/html-academy.svg" width="27px" height="34px"  alt="иконка разработчика" />
+        </a>
       </div>
     </div>
   </footer>
 
 
-  <section class="modal-navigation">
-    <div class="modal-navigation__wrapper">
-      <div class="modal-navigation__inner">
-        <img src="../image/logo-mobile-2.svg" width="100px" height="15px" alt="Логотип компании Погнали" />
-        <button class="modal-navigation__button" type="button"></button>
-      </div>
-
-      <ul class="modal-navigation__list">
-        <li class="modal-navigation__item">о сервисе</li>
-        <li class="modal-navigation__item">направления</li>
-        <li class="modal-navigation__item">попутчики</li>
-      </ul>
-
-      <a class="modal-navigation__login login" href="#">авторизация</a>
-      
-      <div class="modal-navigation__contact">
-        <a class="modal-navigation__phone" href="tel:+78005558628">
-          <img src="../image/phone.svg" width="16px" height="16px" alt="Позвонить" />
-        </a>
-        <a class="modal-navigation__email" href="mailto:mail@htmlacademy.ru">
-          <img src="../image/email.svg" width="14px" height="11px" alt="Позвонить" />
-        </a>
-      </div>
-
-        <ul class="modal-navigation__social-list">
-          <li class="modal-navigation__social-item">
-            <a class="modal-navigation__social-link" href="#">
-              <img src="../image/facebook.svg" width="13px" height="27px" alt="facebook"/>
-            </a>
-          </li>
-          <li class="modal-navigation__social-item">
-            <a class="modal-navigation__social-link" href="#">
-              <img src="../image/vk.svg" width="30px" height="16px" alt="Вконтакте"/>
-            </a>
-          </li>
-          <li class="modal-navigation__social-item">
-            <a class="modal-navigation__social-link" href="#">
-              <img src="../image/instagram.svg" width="24px" height="24px" alt="instagram"/>
-            </a>
-          </li>
-        </ul>
-    </div>
-  </section>
+  
 
 
   <section class="modal-bisness">
