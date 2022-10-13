@@ -1,0 +1,213 @@
+.form {
+  background: #D4D9EB;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #1D2E5B;
+}
+
+.form-inner {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.form__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #1D2E5B;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form-indication__discription-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.form-indication__discription-txt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  opacity: 0.3;
+}
+
+.form-indication__control-block {
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
+}
+
+.form-indication__number{
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.form-box__block-check {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #CBCED9;
+  border-radius: 4px
+}
+
+.form-box__text-checkbox {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #1D2E5B;
+}
+
+
+.form__calender-month-back {
+  background-image: url("../image/calender-month-back.svg") no-repeat;
+  width: 14px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+}
+
+.form__calender-month-ahead {
+  background-image: url("../image/calender-month-ahead.svg") no-repeat;
+  width: 14px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+}
+
+.form__calender-month-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #1D2E5B;
+}
+
+.calender {
+  border-collapse: collapse;
+}
+
+.calender__cell-weekdays {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calender__cell-weekend {
+  color: #FF5C23;
+}
+
+.calender__cell-days {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #FFFFFF;
+  border: 1px solid #CBCED9;
+}
+
+.calender__cell-days--select {
+  border: 2px solid #FF5C23;
+}
+
+.calender__cell-days--add {
+  color: #FFFFFF;
+  background: #1D2E5B;
+}
+.calender__cell-days--possible {
+  color: #1D2E5B;
+  background: #EDEFF6;
+}
+
+.form__button-next {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  text-decoration: none;
+  background: #FFD74B;
+  border-radius: 20px;
+  border: none;
+}
+
+.form__button-back {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form__entertainments-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1D2E5B;
+}
+
+.form__entertainments-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
+}
+
+.form__entertainments-input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+
+.modal-filter-form__inner {
+  background-color: #1D2E5B;
+}
+
+.modal-filter-form__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.modal-filter-form__button {
+  background-image: url("../image/icon_close-filter.svg");
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border: none;
+}

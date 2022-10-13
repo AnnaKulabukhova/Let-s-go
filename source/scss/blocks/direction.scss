@@ -1,0 +1,141 @@
+.direction {
+  background: #EDEFF6;
+  border-radius: 0 0 30px 30px;
+}
+
+.direction__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width:768px) {
+  .direction__wrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .direction__wrapper {
+    display: grid;
+    padding: 0;
+    padding-right: 60px;
+    padding-left: 131px;
+  }
+}
+
+.direction__block {
+  grid-area: block;
+}
+
+.diection__title {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.direction__text {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (min-width:768px) {
+  .direction__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.direction__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.direction__img {
+  
+  width: 100%;
+}
+
+.direction__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
+
+.direction__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .direction__item {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.direction__item-block {
+  position: absolute;
+  top: 99px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.direction__item-title {
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1;
+  color: #000000;
+}
+
+@media (min-width:768px) {
+  .direction__item-titlet {
+    font-size: 24px;
+  }
+}
+
+.direction__item-text {
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+@media (min-width:768px) {
+  .direction__item-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.direction__item-inner {
+  margin-left: 25px;
+}
+
+.direction__item-quantity {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #161C35;
+  opacity: 0.3;
+}
+
+@media (min-width:768px) {
+  .direction__item-quantity {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// .direction__item-img {
+//   position: absolute;
+//   left: 25px;
+//   top: -12px;
+// }
+
+.direction__button  {
+  grid-area: block;
+}

@@ -1,0 +1,154 @@
+.price {
+  background: #E6E8F1;
+  border-radius: 0 0 30px 30px;
+}
+
+.price__wrapper {
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 49px;
+}
+
+@media (min-width:768px) {
+  .price__wrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price__wrapper {
+    padding: 0 130px;
+  }
+}
+
+.price__title {
+  text-align: left;
+  margin-bottom: 56px;
+  width: 107px;
+}
+
+@media (min-width:768px) {
+  .price__title {
+    text-align: center;
+    font-size: 45px;
+    line-height: 1;
+  }
+}
+
+.price__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width:768px) {
+  .price__block  {
+    display: flex;
+    flex-direction:row-reverse;
+  }
+}
+
+.price__discripion {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.price__discripion:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .price__discripion {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.price__discripion-text {
+  margin-bottom: 6;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.price__discripion-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .price__discripion-text {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.price__number {
+  margin-left: 20px;
+}
+
+.price__number-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 31px;
+  width: 34px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;  
+  color: #FFFFFF;
+}
+
+.price__number-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .price__number-item {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.price__number-item:nth-child(1) {
+  background-color: #FF8D30;
+  border-radius: 50%;
+}
+
+.price__number-item:nth-child(2) {
+  background-color: #FFBD30;;
+  border-radius: 50%;
+}
+
+.price__number-item:nth-child(3) {
+  background-color: #FFD74B;
+  border-radius: 50%;
+}
+
+.price__tariff {
+  margin-top: 46px;
+}
+
+.profile__tariff-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #132576;
+}
+
+@media (min-width:768px) {
+  .profile__tariff-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.price__tariff-img {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .price__tariff-img {
+    display: inline;
+  }
+}

@@ -1,0 +1,29 @@
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+
+@import "blocks/page.scss";
+@import "blocks/modal-navigation.scss";
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/service.scss";
+@import "blocks/direction";
+@import "blocks/companion";
+@import "blocks/price";
+@import "blocks/registration";
+@import "blocks/locations";
+@import "blocks/footer";
+@import "blocks/transport";
+
+
+@import "blocks/modal-bisness";
+@import "blocks/filter-country";
+@import "blocks/table-alphabet";
+@import "blocks/filter";
+@import "blocks/catalog-card";
+@import "blocks/more";
+@import "blocks/pagination";
+
+@import "blocks/profile";
+@import "blocks/plans";
+@import "blocks/form";

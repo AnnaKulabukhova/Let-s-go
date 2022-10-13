@@ -1,0 +1,74 @@
+.service {
+  color: #FFFFFF;
+  background: url("../image/background-service-mobile.png") no-repeat;
+  background-color: #192144;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0 0 30px 30px;
+}
+
+.service__wrapper {
+  padding: 0;
+    padding-right: 60px;
+    padding-left: 49px;
+}
+
+@media (min-width:768px) {
+  .service__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 74px;
+    background: #192144;
+  }
+}
+
+@media (min-width: 1440px) {
+  .service__wrapper {
+    padding: 0;
+    padding-right: 60px;
+    padding-left: 131px;
+  }
+}
+
+.service__info {
+  font-weight: 300;
+}
+
+@media (min-width:768px) {
+  .service__info {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.service__text {
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .service__text {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+.service__button {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .service__button {
+    display: block;
+  }
+}
+
+.service__picture {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .service__picture {
+    display: block;
+  }
+}

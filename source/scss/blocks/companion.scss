@@ -1,0 +1,207 @@
+.companion {
+  background: #192144;
+  border-radius: 0 0 30px 30px;
+}
+
+.companion__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width:768px) {
+  .companion__wrapper {
+    padding: 0 74px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .companion__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    padding-right: 60px;
+    padding-left: 130px;
+  }
+}
+
+@media (min-width:768px) {
+  .companion__block {
+    width: 62%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .companion__block {
+    width: 68%;
+  }
+}
+
+.companion__title {
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+}
+
+@media (min-width:768px) {
+  .companion__title {
+    font-size: 45px;
+    line-height: 1;
+  }
+}
+
+.companion__info {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;  
+}
+
+@media (min-width:768px) {
+  .companion__info {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.companion__text {
+  margin: 0;
+  margin-bottom: 54px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+@media (min-width:768px) {
+  .companion__text {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+.companion__cards {
+  display: block;
+}
+
+@media (min-width:768px) {
+  .companion__cards {
+    display: flex;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 9px;
+  border-radius: 10px;
+}
+
+.card:last-child {
+  margin: 20px;
+}
+
+@media (min-width:1440px) {
+  .card {
+    width: 43.1%;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width:1440px) {
+  .card:last-child {
+    margin-right: 0px;
+  }
+}
+
+.card__countries-list {
+  position: absolute;
+  top: 260px; 
+  left: 20px;
+  display: flex;
+  list-style: none;
+}
+
+.card__countries-item {
+  margin-right: 20px;
+}
+
+.card__countries-item:last-child {
+  margin-right: 0;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .card__img {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card__img {
+    width: 100%
+  }
+}
+
+.card__info {
+  background: #FFFFFF;
+  width: 100%
+}
+
+@media (min-width: 1440px) {
+  .card__info {
+    width: 100%
+  }
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1;
+  text-align: center;
+  color: #1D2E5B;
+}
+
+@media (min-width:768px) {
+  .card__title {
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+
+.card__features {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .card__features {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.card__inner {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.companion__button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 61px;
+  padding-left: 23px;
+  margin-bottom: 31px;
+}

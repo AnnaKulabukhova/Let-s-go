@@ -1,0 +1,75 @@
+.catalog-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.catalog-card__avatar {
+  border-radius: 50%;
+}
+
+.catalog-card__person-link {
+  color: #1D2E5B;
+  text-decoration: none;
+}
+
+.catalog-card__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.catalog-card__features {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.catalog-card__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.catalog-card__liked-box {
+  background: #E2E5F2;
+  border-radius: 50%;
+}
+
+.catalog-card__liked-box--select {
+  background: #F9EAEA;
+}
+
+.catalog-card__liked-icon path {
+  background: #192144;
+}
+
+.catalog-card__liked-icon--select path {
+  background: #F02323;
+}
+
+.catalog-card__country-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.catalog-card__level-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1D2E5B;
+}
+
+.catalog-card__buttom {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161C35;
+  background: #FFD74B;
+  border-radius: 25px;
+}

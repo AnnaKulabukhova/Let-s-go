@@ -1,0 +1,72 @@
+.filter-country {
+  background: #E2E5F2;
+}
+
+.filter-country__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #192144;
+}
+
+.filter-country__button--open {
+  background-image: url("../image/open-filter.svg");
+  background-color: transparent;
+  width: 17px;
+  height: 3px;
+  border: none;
+}
+
+.filter-country__button--close {
+  background-image: url("../image/icon_close-1.svg");
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+.modal-filter__continent-list {
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.modal-filter__continent-item {
+  color: #192144;
+  opacity: 0.3;
+}
+
+.modal-filter__continent-item--add {
+  color: #192144;
+  opacity: 1;
+}
+
+.country-list {
+  list-style: none;
+}
+
+.country-list__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.country-list__link {
+  color: #444444;
+  text-decoration: none;
+}
+
+.modal-filter__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #192144;
+  background: #D6DAED;
+  border-radius: 20px;
+  border: none;
+}

@@ -1,0 +1,39 @@
+.header {
+  background: #161C35;
+}
+
+.header-box {
+  background: #FFD74B;
+}
+
+.header__navigaion {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .header__navigaion {
+    display: flex;
+  }
+}
+
+.header__navigaion__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header__navigaion__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+@media (min-width: 1440px) {
+  .header__navigation-button {
+    display: none;
+  }
+}

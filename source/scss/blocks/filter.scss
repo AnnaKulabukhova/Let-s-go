@@ -1,0 +1,105 @@
+.filter {
+  background: #FFD74B;
+  border-radius: 20px;
+}
+
+.filter__main-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #1D2E5B;
+}
+
+.control {
+  border: none;
+}
+
+.control__inner-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.control__inner-button--open {
+  background-image: url("../image/triangle-2.svg");
+  width: 10px;
+  height: 6px;
+  background-color: transparent;
+  border: none;
+}
+
+.control__inner-button--close {
+  background-image: url("../image/triangle-2.svg");
+  transform: rotate(-180deg);
+  width: 10px;
+  height: 6px;
+  background-color: transparent;
+  border: none;
+}
+
+.control__list {
+  list-style: none;
+}
+
+.block-check {
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-checkbox {
+  display: none;
+}
+
+.control__text-checkbox {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.control__level-inner {
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
+}
+
+.control__level-input {
+  border: none;
+}
+
+
+.range-controls__scale {
+  width: 193px;
+  height: 2px;
+  background: rgba(29, 46, 91, 0.2);
+}
+
+.range-controls__bar {
+  width: 138px;
+  height: 2px;
+  background: rgba(29, 46, 91, 1);
+}
+
+.toggle {
+  width: 10px;
+  height: 10px;
+  background: #1D2E5B;
+  border-radius: 50%;
+}
+
+.filter__buttom {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+  background: #FFFFFF;
+  border-radius: 25px;  
+  border: none;
+}
