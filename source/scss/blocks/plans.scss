@@ -1,49 +1,205 @@
 .plans {
+  position: relative;
+  margin-top: -28px;
   background: #DFE3F0;
-}
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
 
-.plans__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1;
-  color: #1D2E5B;
+  @media (min-width: 768px) {
+    margin-top: -27px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: -56px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  &__wrapper {
+    padding: 28px 25px 60px;
+    border-radius: 20px 20px 0 0;
+
+    @media (min-width: 768px) {
+      padding: 57px 75px 118px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-top: 54px;
+      padding-left: 124px;
+      padding-bottom: 121px;
+      padding-right: 58px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #1D2E5B;
+
+    @media (min-width: 768px) {
+      margin-bottom: 48px;
+      font-size: 36px;
+      line-height: 1;
+    }
+  }
 }
 
 .plans-block {
+  margin-bottom: 10px;
+  padding: 23px;
   background: #FFFFFF;
   border-radius: 10px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    margin-bottom: 11px;
+    padding-top: 43px;
+    padding-left: 40px;
+    padding-bottom: 14px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15x;
+    padding: 38px 42px;
+  }
+
+  &::after {
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 1439px){
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 98px;
+      left: 0px;
+      background-color: #CBCED9;
+      opacity: 0.3;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      justify-content:start;
+      margin: 0;
+    }
+  }
+
+  &__inner-number {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #1D2E5B;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 36px;
+    }
+  }
+
+  &__inner-title {
+    margin: 0;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #1D2E5B;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__info {
+    display: block;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__info-box {
+  margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+
+  &__info-text {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #1D2E5B;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      margin-right: 56px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 45px;
+    }
+  }
+
+  &__info-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.3;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-left: 90px;
+    }
+  }
+
+  &__info-link:hover {
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  &__info-link:active {
+    color: #000000;
+    opacity: 0.1;
+  }
 }
 
-.plans-block__number {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
-  color: #1D2E5B;
-}
 
-.plans-block__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-  color: #1D2E5B;
-}
-
-.plans-block__info-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #1D2E5B;
-}
-
-.plans-block__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-  opacity: 0.3;
+.plans-block:last-child {
+  margin-bottom: 0;
 }

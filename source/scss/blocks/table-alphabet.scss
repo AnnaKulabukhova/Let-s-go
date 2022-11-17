@@ -1,23 +1,110 @@
 .table-alphabet {
   border-collapse: collapse;
+
+  &__cell {
+    width: 43px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background: #FFFFFF;
+    border: 1px solid rgba(203, 206, 217, 1);
+  }
+
+  &__button {
+    padding: 0;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background: #FFFFFF;
+    border: none;
+  }
+
+  &__catalog-cell--select {
+    color: #FFFFFF;
+    background: #1D2E5B;
+  }
+
+  &__catalog-button--select {
+    color: #FFFFFF;
+    background: #1D2E5B;
+    border: none;
+  }
+
+  &__form-cell--select {
+    background: #EDEFF6;
+
+    @media (min-width: 768px) {
+      background: #1D2E5B;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .table-alphabet__cell-form {
+      box-sizing: border-box;
+      width: 53px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .table-alphabet__cell-form {
+      box-sizing: border-box;
+      width: 60px;
+      height: 70px;
+    }
+    }
+  }
+
+@media (min-width: 768px) {
+  .table-alphabet__button-catalog {
+    color: #192144;
+    background:transparent;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 60px;
+    color: #192144;
+    opacity: 0.3;
+  }
 }
 
-.table-alphabet__cell {
+@media (min-width: 768px) {
+  .table-alphabet__catalog-button--select {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-alphabet__cell-catalog {
+    width: 68px;
+    height: 67px;
+    text-align: left;
+    background:transparent;
+    border: none
+  }
+}
+
+.table-alphabet__button-form {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
+  font-size: 20px;
+  line-height: 20px;
   text-align: center;
+  font-family: inherit;
   text-transform: uppercase;
-  color: #1D2E5B;
-  background: #FFFFFF;
-  border: 1px solid rgba(203, 206, 217, 1);
-}
+  border: none;
 
-.table-alphabet__catalog-cell--select {
-  color: #FFFFFF;
-  background: #1D2E5B;
-}
+  @media (min-width: 768px) {
+    color: #1D2E5B;
+    background-color: transparent;
+  }
 
-.table-alphabet__form-cell--select {
-  background: #EDEFF6;
+  &--select {
+    background-color: transparent;
+
+    @media (min-width: 768px) {
+      color: #FFFFFF;
+      background-color: transparent;
+    }
+  }
 }

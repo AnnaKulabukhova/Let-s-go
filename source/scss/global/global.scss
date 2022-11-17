@@ -1,7 +1,7 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 .visually-hidden {
   position: absolute;
@@ -24,16 +24,15 @@ img {
   color: #1D2E5B;
   background: #FFD74B;
   border-radius: 10px;
-}
 
-@media (min-width:768px) {
-  .button {
+  @media (min-width:768px) {
     font-size: 24px;
     line-height: 1;
   }
 }
 
 .title {
+  // margin: 0;
   font-weight: 700;
   font-weight: 700;
   font-size: 24px;
@@ -59,14 +58,29 @@ img {
   border-radius: 25px;
 }
 
-.contaner-catalog {
-  background: #E5E5E5;
+.login:hover {
+  background: #FFBD30;
 }
 
-.main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
-  color: #FFFFFF;
+.login:active {
+  color: rgba(22, 28, 53, 0.3);
+  background: #FFBD30;
+}
+
+
+.contaner-catalog {
+  background: #EDEFF6;
+}
+
+.catalog-box {
+  display: block;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 

@@ -5,7 +5,9 @@
 @import "blocks/page.scss";
 @import "blocks/modal-navigation.scss";
 @import "blocks/header.scss";
-@import "blocks/hero.scss";
+@import "blocks/hero-mobile.scss";
+@import "blocks/hero-tablet.scss";
+@import "blocks/hero-desktop.scss";
 @import "blocks/service.scss";
 @import "blocks/direction";
 @import "blocks/companion";
@@ -15,15 +17,21 @@
 @import "blocks/footer";
 @import "blocks/transport";
 
-
+@import "blocks/header-catalog";
 @import "blocks/modal-bisness";
 @import "blocks/filter-country";
 @import "blocks/table-alphabet";
 @import "blocks/filter";
-@import "blocks/catalog-card";
+@import "blocks/filter-tablet";
+@import "blocks/catalog-card-mobile";
+@import "blocks/catalog-card-tablet";
+@import "blocks/catalog-card-desktop";
 @import "blocks/more";
 @import "blocks/pagination";
 
-@import "blocks/profile";
+@import "blocks/header-form";
+@import "blocks/profile-mobile";
+@import "blocks/profile-tablet";
+@import "blocks/profile-desktop";
 @import "blocks/plans";
 @import "blocks/form";

@@ -7,15 +7,6 @@
   margin-right: 0px;
 }
 
-.catalog-card__transport-img {
-  background: #EDEFF6;
-  border-radius: 50%;
-}
-
-.conrtol__transport-img {
-  background: #FFFFFF;
-  border-radius: 50%;
-}
 
 .profile__transport-img {
   background: #FFFFFF;
@@ -62,4 +53,28 @@
   color: #FFFFFF;
   background: #101D41;
   border-radius: 4px;
+  z-index: 2;
+}
+
+.card-transport:hover .transport-text-form {
+  top: 40px;
+  left: -70px;
+  z-index: 2;
+}
+
+.card-transport:hover .transport-text-form-tablet {
+  top: 50px;
+  left: -65px;
+}
+
+.card-transport:hover .control__transport-text {
+  top: 50px;
+  left: -65px;
+  z-index: 2;
+}
+
+.card-transport:hover .control-tablet__transport-text {
+  top: 50px;
+  left: -65px;
+  z-index: 2;
 }

@@ -3,113 +3,141 @@
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
   border-radius: 20px;
-}
 
-@media (min-width: 768px) {
-  .modal-bisness {
+  @media (min-width: 768px) {
     width: calc(100% - 80px);
   }
-}
 
-@media (min-width: 1440px) {
-  .modal-bisness {
+  @media (min-width: 1440px) {
     width: 750px;
   }
-}
 
-.modal-bisness__wrapper {
-  padding: 0 25px;
-}
+  &__wrapper {
+    padding: 0 25px;
+  
 
-@media (min-width: 768px) {
-  .modal-bisness__wrapper {
-    padding: 0 90px;
+    @media (min-width: 768px) {
+      padding: 0 90px;
+    }
+    
+
+    @media (min-width: 1440px) {
+      padding: 0 58px;
+    }
+  }  
+
+  &__title {
+    margin-bottom: 39px;
+    text-align: center;
+    
+
+    @media (min-width: 768px) {
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 58px;
+    }
   }
-}
 
-@media (min-width: 1440px) {
-  .modal-bisness__wrapper {
-    padding: 0 58px;
+  &__price {
+    position: relative;
+    display:block;
+    margin-bottom: 22px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 27px;
+    }
   }
-}
 
-.modal-bisness__title {
-  margin-bottom: 39px;
-  text-align: center;
-}
+  &__price::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -11px;
+    color: #000000;
 
-@media (min-width: 768px) {
-  .modal-bisness__title {
-    margin-bottom: 61px;
+    @media (min-width: 768px) {
+      top: -14px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -12px;
+    }
   }
-}
 
-@media (min-width: 1440px) {
-  .modal-bisness__title {
-    margin-bottom: 58px;
+  &__price:last-child:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 55px;
+    // color: #000000;
+    color: rgba(0, 0, 0, 0.05);
+  
+    @media (min-width: 768px) {
+      top: 40px;
+    }
+
+    @media (min-width: 1440px) {
+      top: 42px;
+    }
   }
-}
 
-.modal-bisness__price {
-  display:block;
-  margin-bottom: 22px;
-}
+  &__price-text {
+    display:block;
+    font-size: 16px;
+    line-height: 22px;
 
-.modal-bisness__price:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .modal-bisness__price {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 27px;
+     @media (min-width: 768px) {
+      display: flex;
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
-}
 
-.modal-bisness__price-text {
-  display:block;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-@media (min-width: 768px) {
-  .modal-bisness__price-text {
-    display: flex;
-    font-size: 22px;
-    line-height: 28px;
+  &__price:last-child {
+    margin-bottom: 0;
   }
-}
 
-.modal-bisness__button {
-  width: 100%;
-  margin-top: 45px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #1D2E5B;
-  background: #F3F4F8;
-  border: transparent;
-  border-radius: 0 0 20px 20px;
-}
+  &__button {
+    width: 100%;
+    margin-top: 45px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background: #F3F4F8;
+    border: transparent;
+    border-radius: 0 0 20px 20px;
 
-@media (min-width: 768px) {
-  .modal-bisness__button {
-    font-size: 24px;
-    line-height: 1;
-    margin-top: 64px;
-    padding-top: 41px;
-    padding-bottom: 41px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1;
+      margin-top: 64px;
+      padding-top: 41px;
+      padding-bottom: 41px;
+    }  
+
+  @media (min-width: 1440px) {
+      margin-top: 67px;
+      font-size: 24px;
+      line-height: 26px;
+    }
   }
-}
 
-@media (min-width: 1440px) {
-  .modal-bisness__button {
-    margin-top: 67px;
-    font-size: 24px;
-    line-height: 26px;
+  &__button:hover {
+    background:  #EDEFF6;
+  }
+
+  &__button:active {
+    color: rgba(29, 46, 91, 0.3);
+    background:  #EDEFF6;
   }
 }
