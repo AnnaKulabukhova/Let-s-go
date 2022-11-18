@@ -1,8 +1,3 @@
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -32,16 +27,13 @@
 }
 
 .title {
-  // margin: 0;
   font-weight: 700;
   font-weight: 700;
   font-size: 24px;
   line-height: 1;  
   color: #FF8D30;
-}
 
-@media (min-width:768px) {
-  .title {
+  @media (min-width:768px) {
     font-size: 45px;
   }
 }
@@ -56,17 +48,16 @@
   color: #161C35;
   background: #FFD74B;
   border-radius: 25px;
-}
 
-.login:hover {
-  background: #FFBD30;
-}
+  &:hover {
+    background: #FFBD30;
+  }
 
-.login:active {
-  color: rgba(22, 28, 53, 0.3);
-  background: #FFBD30;
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+    background: #FFBD30;
+  }
 }
-
 
 .contaner-catalog {
   background: #EDEFF6;

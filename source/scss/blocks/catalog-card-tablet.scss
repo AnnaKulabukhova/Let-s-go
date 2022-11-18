@@ -10,7 +10,12 @@
 		.catalog-card-tablet {
 			margin: 0;
 		}
-	}	
+	}
+  
+  &:hover {
+    zoom: 101%;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.16);
+  }
 
 	&__wrapper {
 		padding-left: 35px;
@@ -42,15 +47,15 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    color: #1D2E5B
-  }
+    color: #1D2E5B;
 
-  &__name:hover {
-    opacity: 0.6;
-  }
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &__name:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__features {
@@ -77,15 +82,15 @@
     color: #161C35;
     background: #FFD74B;
     border-radius: 25px;
-  }
 
-  &__buttom:hover {
-    background: #FFBD30;
-  }
+    &:hover {
+      background: #FFBD30;
+    }
 
-  &__buttom:active {
-    color: rgba(22, 28, 53, 0.3);
-    background: #FFBD30;
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+      background: #FFBD30;
+    }
   }
 
   &__liked {
@@ -117,15 +122,15 @@
     height: 50px;
     background-color: #F9EAEA;
     border-radius: 50%;
-  }
+  
+    &:hover {
+      background: #F9D8D8;
+    }
 
-  &__liked-box--select:hover {
-    background: #F9D8D8;
-  }
-
-  &__liked-box--select:active {
-    background: #F9D8D8;
-    opacity: 0.3;
+    &:active {
+      background: #F9D8D8;
+      opacity: 0.3;
+    }
   }
 
   &__liked-text {
@@ -151,11 +156,11 @@
 
 	&__transports-item {
 		margin-bottom: 11px;
-	}
 
-	&__transports-item:last-child {
-		margin-bottom: 0;
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
 	&__title {
     position: relative;
@@ -166,46 +171,46 @@
 		font-size: 15px;
 		line-height: 16px;
 		color: #444444;
-	}
+	
+    &::before {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      position: absolute;
+      width: 6.5%;
+      height: 1px;
+      background-color: #EDEFF6;
+      left: 106px;
+      top: 8px;
+      left: 0px;
+      margin-left: -7%
+    }
 
-  &__title::before {
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    position: absolute;
-    width: 6.5%;
-    height: 1px;
-    background-color: #EDEFF6;
-    left: 106px;
-    top: 8px;
-    left: 0px;
-    margin-left: -7%
+    &::after {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      position: absolute;
+      width: 91.5%;
+      height: 1px;
+      background-color:#EDEFF6;
+      right:-14px;
+      top: 8px;
+      margin-left: -100%;
+    }
   }
-
-  &__title::after {
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    position: absolute;
-    width: 91.5%;
-    height: 1px;
-    background-color:#EDEFF6;
-    right:-14px;
-    top: 8px;
-    margin-left: -100%;
-  }
-
+  
 	&__countries {
 		display: flex;
 	}
 
 	&__country {
 		margin-right: 25px;
-	}
 
-	&__country:last-child {
-		margin-right: 0;
-	}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
 	&__country-text {
 		margin-left: 10px;
@@ -262,19 +267,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 1px;
+      top: 40px;
+      left: -10px;
+      color: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+    }
   }
-
-  &__number::after {
-    content: "";
-    position: absolute;
-    width: 31px;
-    height: 1px;
-    top: 40px;
-    left: -10px;
-    color: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-  }
-
+  
   &__text {
     display: block;
     font-weight: 400;
@@ -286,11 +291,6 @@
     left: 50%;
     transform: translate(0%, -100%);
   }  
-}
-
-.catalog-card-tablet:hover {
-  zoom: 101%;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.16);
 }
 
 

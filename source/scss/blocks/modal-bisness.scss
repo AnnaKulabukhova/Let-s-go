@@ -14,13 +14,11 @@
 
   &__wrapper {
     padding: 0 25px;
-  
 
     @media (min-width: 768px) {
       padding: 0 90px;
     }
     
-
     @media (min-width: 1440px) {
       padding: 0 58px;
     }
@@ -30,7 +28,6 @@
     margin-bottom: 39px;
     text-align: center;
     
-
     @media (min-width: 768px) {
       margin-bottom: 61px;
     }
@@ -50,40 +47,43 @@
       justify-content: space-between;
       margin-bottom: 27px;
     }
-  }
 
-  &__price::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: -11px;
-    color: #000000;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: -11px;
+      color: #000000;
 
-    @media (min-width: 768px) {
-      top: -14px;
+      @media (min-width: 768px) {
+        top: -14px;
+      }
+
+      @media (min-width: 1440px) {
+        top: -12px;
+      }
     }
 
-    @media (min-width: 1440px) {
-      top: -12px;
-    }
-  }
+    &:last-child {
+      margin-bottom: 0;
 
-  &__price:last-child:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 55px;
-    // color: #000000;
-    color: rgba(0, 0, 0, 0.05);
-  
-    @media (min-width: 768px) {
-      top: 40px;
-    }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 55px;
+        color: rgba(0, 0, 0, 0.05);
+      
+        @media (min-width: 768px) {
+          top: 40px;
+        }
 
-    @media (min-width: 1440px) {
-      top: 42px;
+        @media (min-width: 1440px) {
+          top: 42px;
+        }
+      }
     }
   }
 
@@ -97,10 +97,6 @@
       font-size: 22px;
       line-height: 28px;
     }
-  }
-
-  &__price:last-child {
-    margin-bottom: 0;
   }
 
   &__button {
@@ -125,19 +121,19 @@
       padding-bottom: 41px;
     }  
 
-  @media (min-width: 1440px) {
+    @media (min-width: 1440px) {
       margin-top: 67px;
       font-size: 24px;
       line-height: 26px;
     }
-  }
 
-  &__button:hover {
-    background:  #EDEFF6;
-  }
+    &:hover {
+      background:  #EDEFF6;
+    }
 
-  &__button:active {
-    color: rgba(29, 46, 91, 0.3);
-    background:  #EDEFF6;
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+      background:  #EDEFF6;
+    }
   }
 }

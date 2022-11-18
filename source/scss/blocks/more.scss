@@ -33,56 +33,56 @@
       font-size: 20px;
       line-height: 20px;
     }
-  }
+  
+    &::before { 
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 1.4px;
+      top: 10px;
+      left: -35px;
+      transform: rotate(-90deg);
+      background: #1D2E5B;
+      border-radius: 2px; 
 
-  &__button::before { 
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 1.4px;
-    top: 10px;
-    left: -35px;
-    transform: rotate(-90deg);
-    background: #1D2E5B;
-    border-radius: 2px; 
+      @media (min-width: 768px) {
+        width: 26px;
+        height: 2px;
+        left: -50px;
+      }
 
-    @media (min-width: 768px) {
-      width: 26px;
-      height: 2px;
-      left: -50px;
-    }
-  } 
+      &:hover {
+        opacity: 0.6;
+      } 
 
-  &__button:hover::before {
-    opacity: 0.6;
-  } 
+      &:active {
+        opacity: 0.3;
+      }
+    } 
 
-  &__button:active::before {
-    opacity: 0.3;
-  }
+    &::after { 
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 1.4px;
+      top: 10px;
+      left: -35px;
+      background: #1D2E5B;
+      border-radius: 2px; 
 
-  &__button::after { 
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 1.4px;
-    top: 10px;
-    left: -35px;
-    background: #1D2E5B;
-    border-radius: 2px; 
+      @media (min-width: 768px) {
+        width: 26px;
+        height: 2px;
+        left: -50px;
+      }
 
-    @media (min-width: 768px) {
-      width: 26px;
-      height: 2px;
-      left: -50px;
-    }
-  } 
+      &:hover {
+        opacity: 0.6;
+      }
 
-  &__button:hover::after {
-    opacity: 0.6;
-  }
-
-  &__button:active::after {
-    opacity: 0.3;
+      &:active {
+        opacity: 0.3;
+      }
+    } 
   }
 }

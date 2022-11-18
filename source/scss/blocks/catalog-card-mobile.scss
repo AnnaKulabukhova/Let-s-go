@@ -8,6 +8,11 @@
     display: none;
   }
 
+  &:hover {
+    zoom: 101%;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.16);
+  }
+
   &__wrapper {
     height: auto;
     margin-bottom: 10px;
@@ -40,14 +45,14 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-  }
 
-  &__name:hover {
-    opacity: 0.6;
-  }
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &__name:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__person-liked {
@@ -81,17 +86,16 @@
     height: 30px;
     background: #F9EAEA;
     border-radius: 50%;
-  }
+  
+    &:hover {
+      background: #F9D8D8;
+    }
 
-  &__person-liked-box--select:hover {
-    background: #F9D8D8;
+    &:active {
+      background: #F9D8D8;
+      opacity: 0.6;
+    }
   }
-
-  &__person-liked-box--select:active {
-    background: #F9D8D8;
-    opacity: 0.6;
-  }
-
 
   &__person-liked-text {
     align-self: center;
@@ -128,10 +132,10 @@
 
   &__country {
     margin-bottom: 10px;
-  }
 
-  &__country:last-child {
-    margin-bottom: 0px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   &__country-image {
@@ -152,9 +156,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 21px;
-  }
-
-  
+  } 
 
   &__transports-title {
     margin: 0;
@@ -193,15 +195,15 @@
     color: #161C35;
     background: #FFD74B;
     border-radius: 25px;
-  }
+  
+    &:hover {
+      background: #FFBD30;
+    }
 
-  &__buttom:hover {
-    background: #FFBD30;
-  }
-
-  &__buttom:active {
-    color: rgba(22, 28, 53, 0.3);
-    background: #FFBD30;
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+      background: #FFBD30;
+    }
   }
 }
 
@@ -240,11 +242,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.catalog-card-mobile:hover {
-  zoom: 101%;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.16);
 }
 
 .red-circle::after {

@@ -84,15 +84,15 @@
     text-decoration: none;
     color: rgba(255, 215, 75, 1);
     border-bottom: 1px solid rgba(255, 215, 75, 1);
-  }
 
-  &__link:hover {
-    color: #FF8D30;
-    border-bottom: 1px solid #FF8D30;
-  }
+    &:hover {
+      color: #FF8D30;
+      border-bottom: 1px solid #FF8D30;
+    }
 
-  &__link:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__input {
@@ -115,37 +115,37 @@
       border-radius: 20px 0 0 20px;
       width: 850px;
     }
-  }
 
-  &__input:hover {
-    background: #EDEFF6;
-  }
-
-  &__input:active {
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
-    background: #192144;
-  }
-
-  &__input:invalid {
-    color: #FF0000;;
-    background:#FFFFFF;
-  }
-
-  &__input::placeholder {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1;
-    color: #444444;
-    opacity: 0.3;
-
-    @media (min-width:768px) {
-      font-size: 24px;
+    &:hover {
+      background: #EDEFF6;
     }
-  }
 
-  &__input:hover::placeholder {
-    opacity: 0.3;
+    &:active {
+      color: #FFFFFF;
+      border: 4px solid #FFFFFF;
+      background: #192144;
+    }
+
+    &:invalid {
+      color: #FF0000;;
+      background:#FFFFFF;
+    }
+
+    &::placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1;
+      color: #444444;
+      opacity: 0.3;
+
+      @media (min-width:768px) {
+        font-size: 24px;
+      }
+    }
+
+    &:hover::placeholder {
+      opacity: 0.3;
+    }
   }
 
   &__text-bottom {
@@ -157,7 +157,7 @@
       margin-bottom: 40px;
       font-size: 28px;
       line-height: 30px;
-  }
+    }
 
     @media (min-width:768px) {
       margin-bottom: 45px;
@@ -207,14 +207,14 @@
     }
   }
 
-  @media (min-width:768px) {
-    .registration__text-break {
+  &__text-break {
+    @media (min-width:768px) {
       display: none;
     }
   }
 
-  @media (min-width: 1440px) {
-    .registration__connection {
+  &__connection {
+    @media (min-width: 1440px) {
       display: flex;
       padding: 0 133px;
       padding-left: 150px;
@@ -247,11 +247,11 @@
       height: 90px;
       margin-right: 31px;
     }
-  }
 
-  &__img:active {
-    opacity: 0.3;
-   }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   &__icon-tel {
     width: 18px;
@@ -304,15 +304,15 @@
       font-size: 28px;
       line-height: 1;
     }
-  }
 
-  &__text:hover {
-    color: #FFBD30;
-  }
+    &:hover {
+      color: #FFBD30;
+    }
 
-  &__text:active {
-    color: #FFBD30;
-    opacity: 0.3;
+    &:active {
+      color: #FFBD30;
+      opacity: 0.3;
+    }
   }
 
   &__link {
@@ -324,11 +324,11 @@
     @media (min-width: 1440px) {
       margin-right: 110px;
     }
-  }
 
-  @media (min-width: 1440px) {
-    .connection__link:last-child {
-      margin-right: 0;
+    &:last-child {
+       @media (min-width: 1440px) {
+          margin-right: 0;
+      }
     }
   }
 }

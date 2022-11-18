@@ -48,16 +48,16 @@
     background: #DFE3F0;
     border-radius: 20px;
     border: none;
-  }
 
-  &__button:hover {
-		background:  #D1D7E9;
-	}
+    &:hover {
+      background:  #D1D7E9;
+    }
 
-	&__button:active {
-		background:   #DFE3F0;
-		color: rgba(22, 28, 53, 0.3);
-	}
+    &:active {
+      background:   #DFE3F0;
+      color: rgba(22, 28, 53, 0.3);
+    }
+  }  
 
   &__title {
     font-weight: 700;
@@ -100,14 +100,14 @@
     height: 32px;
     background-color: #FFFFFF;
     border-radius: 50%;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__transport-icon:hover {
 		opacity: 0.7;
-	}
-
-	&__transport-img:active {
-		opacity: 0.3;
 	}
 }
 
@@ -159,17 +159,17 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-	}
 
-	&__discription-number::after {
-		content: "";
-		position: absolute;
-		width: 50px;
-		height: 2px;
-		top: 40px;
-		left: -10px;
-		color: rgba(255, 255, 255, 0.3);
-		transform: translate(-50%, -50%);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      top: 40px;
+      left: -10px;
+      color: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+    }
 	}
 
 	&__discription-text {
@@ -186,13 +186,13 @@
 
 .frame-mobile {
   border:1px solid #CBCED9;
-   border-radius: 10px;
- }
+  border-radius: 10px;
 
- .frame-mobile:hover {
-  border:1px solid #AEB4CB;
- }
+  &:hover {
+    border:1px solid #AEB4CB;
+  }
 
- .frame-mobile:active {
-  border:1px solid #161C35;
- }
+  &:active {
+    border:1px solid #161C35;
+  }
+} 

@@ -1,12 +1,10 @@
 .card-transport {
-  // margin-right: 13px;
   position: relative;
 }
 
 .card-transport:last-child {
   margin-right: 0px;
 }
-
 
 .profile__transport-img {
   background: #FFFFFF;
@@ -26,16 +24,16 @@
 .transport-text {
   display: none;
   position: relative;
-}
 
-.transport-text::before {
-  content: "";
-  position: absolute;
-  background-image: url("../image/triangle-1.svg");
-  width: 16px;
-  height: 10px;
-  top: -7px;
-  left: 78px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/triangle-1.svg");
+    width: 16px;
+    height: 10px;
+    top: -7px;
+    left: 78px;
+  }
 }
 
 .card-transport:hover .transport-text {

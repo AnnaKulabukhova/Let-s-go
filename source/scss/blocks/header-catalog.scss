@@ -36,7 +36,7 @@
   }
 
   &__navigation-button {
-    background-image: url("../image/icon_menu.svg");
+    background-image: url("../images/icon_menu.svg");
     background-color: transparent;
     width: 25px;
     height: 11px;
@@ -56,6 +56,23 @@
       font-size: 60px;
       line-height: 20px;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 172px;
+      height: 5px;
+      bottom: -13px;
+      left:0;
+      background-color: #FF8D30;
+      border-radius: 4px;
+  
+      @media (min-width: 768px) {
+        width: 288px;
+        height: 8px;
+        bottom: -90px;
+      }
+    }
   }
 
   &__block {
@@ -63,38 +80,21 @@
     justify-content: space-between;
   }
 
-  &__block-title::after {
-    content: "";
-    position: absolute;
-    width: 172px;
-    height: 5px;
-    bottom: -13px;
-    left:0;
-    background-color: #FF8D30;
-    border-radius: 4px;
-
-    @media (min-width: 768px) {
-      width: 288px;
-      height: 8px;
-      bottom: -90px;
-    }
-  }
-  
   &__block-link {
     display: none;
 
-      @media (min-width: 768px) {
-        display: flex;
-        text-decoration: none;
+    @media (min-width: 768px) {
+      display: flex;
+      text-decoration: none;
     }
-  }
 
-  &__block-link:hover {
-    opacity: 0.6;
-  }
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &__block-link:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__block-text {

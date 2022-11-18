@@ -96,8 +96,8 @@
     }
   }
 
-  @media (min-width:768px) {
-    .location__address-break {
+  &__address-break {
+    @media (min-width:768px) {
       display: none;
     }
   }
@@ -127,15 +127,15 @@
       padding-left: 37px;
       padding-right: 35px;
     }
-  }
 
-  &__button:hover {
-    color:  #FFFFFF;
-    background: #192144;
-  }
+    &:hover {
+      color:  #FFFFFF;
+      background: #192144;
+    }
 
-  &__button:active {
-    color: rgba(255, 255, 255, 0.3);
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &__button-image {
@@ -144,7 +144,7 @@
     height: 15px;
   }
 
-  &__button-image:hover .location__button-image path{
+  &__button-image:hover .location__button-image path {
     fill:  #FFFFFF;
     opacity: 1;
   }
@@ -152,5 +152,4 @@
   &__button-image:active path{
    opacity: 0.3;
   }
-
 }

@@ -47,7 +47,7 @@
   }
 
   &__navigation-button {
-    background-image: url("../image/icon_menu.svg");
+    background-image: url("../images/icon_menu.svg");
     background-color: transparent;
     width: 25px;
     height: 11px;
@@ -85,18 +85,18 @@
       margin-left: 145px;
       width: 100%;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 20px;
+      left: -105px;
+      background-color: #FFFFFF;
+    }
   } 
   
-  &__navigaion::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 2px;
-    top: 20px;
-    left: -105px;
-    background-color: #FFFFFF;
-  }
-
   &__navigaion-list {
     display: flex;
     flex-wrap: wrap;
@@ -107,10 +107,10 @@
 
   &__navigaion-item {
     margin-right: 34px;
-  }
 
-  &__navigaion-item:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__navigaion-link {
@@ -124,34 +124,34 @@
     text-decoration: none;
     text-shadow: 0 0 1px rgb(255 255 255 / 30%);
     overflow: hidden;
-  }
+  
+    &:hover {
+      color: #FFD74B;
+      outline-color: initial;
+      outline-style: none;
+      outline-width: initial;
+    }
 
-  &__navigaion-link:hover {
-    color: #FFD74B;
-    outline-color: initial;
-    outline-style: none;
-    outline-width: initial;
-  }
+    &:active {
+      color: #FFD74B;
+      opacity: 0.3;
+    }
 
-  &__navigaion-link:active {
-    color: #FFD74B;
-    opacity: 0.3;
-  }
+    &--hover {
+      position: relative;
+      display: inline-block;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+      transition-property: transform;
 
-  &__navigaion-link--hover {
-    position: relative;
-	  display: inline-block;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: transform;
-  }
-
-  &__navigaion-link--hover::before {
-    position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    transform: translate3d(0,0,0);
+      &::before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        transform: translate3d(0,0,0);
+      }
+    }  
   }
 
   &__navigaion-link:hover .header__navigaion-link--hover {

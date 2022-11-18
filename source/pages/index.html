@@ -11,8 +11,8 @@
     <div class="modal-navigation__wrapper">
       <div class="modal-navigation__inner">
         <picture>
-          <source media="(min-width: 768px)" srcset="../image/logo-tablet-2.png 1x, ../image/logo-tablet-2@2x.png 2x"  width="164"/>
-          <img class="modal-navigation__logo" src="../image/logo-mobile-2.svg" width="96" height="15" alt="Логотип компании" />
+          <source media="(min-width: 768px)" srcset="../images/logo-tablet-2.png 1x, ../images/logo-tablet-2@2x.png 2x"  width="164"/>
+          <img class="modal-navigation__logo" src="../images/logo-mobile-2.svg" width="96" height="15" alt="Логотип компании" />
         </picture>
         <button class="modal-navigation__inner-button" type="button"></button>
         <a class="modal-navigation__login--tablet login" href="#">авторизация</a>
@@ -35,13 +35,13 @@
       <div class="modal-navigation__contact">
         <a class="modal-navigation__contact-link" href="tel:+78005558628">
           <div class="modal-navigation__contact-img">
-            <img class="modal-navigation__contact-icon-phone" src="../image/connection-phone.svg" width="18" height="17" alt="Позвонить" />
+            <img class="modal-navigation__contact-icon-phone" src="../images/connection-phone.svg" width="18" height="17" alt="Позвонить" />
           </div>
           <span class="modal-navigation__contact-text">8 800 555-86-28</span>
         </a>
         <a class="modal-navigation__contact-link" href="mailto:mail@htmlacademy.ru">
           <div class="modal-navigation__contact-img">
-            <img class="modal-navigation__contact-icon-email" src="../image/connection-email.svg" width="23" height="25" alt="Отправить email" />
+            <img class="modal-navigation__contact-icon-email" src="../images/connection-email.svg" width="23" height="25" alt="Отправить email" />
           </div>
           <span class="modal-navigation__contact-text">mail@htmlacademy.ru</span>
         </a>
@@ -50,17 +50,17 @@
         <ul class="modal-navigation__social-list">
           <li class="modal-navigation__social-item">
             <a class="modal-navigation__social-link" href="#">
-              <img class="modal-navigation__social-fb" src="../image/facebook.svg" width="11" height="21" alt="facebook"/>
+              <img class="modal-navigation__social-fb" src="../images/facebook.svg" width="11" height="21" alt="facebook"/>
             </a>
           </li>
           <li class="modal-navigation__social-item">
             <a class="modal-navigation__social-link" href="#">
-              <img class="modal-navigation__social-vk" src="../image/vk.svg" width="23" height="12" alt="Вконтакте"/>
+              <img class="modal-navigation__social-vk" src="../images/vk.svg" width="23" height="12" alt="Вконтакте"/>
             </a>
           </li>
           <li class="modal-navigation__social-item">
             <a class="modal-navigation__social-link" href="#">
-              <img class="modal-navigation__social-inst" src="../image/instagram.svg" width="18" height="18" alt="instagram"/>
+              <img class="modal-navigation__social-inst" src="../images/instagram.svg" width="18" height="18" alt="instagram"/>
             </a>
           </li>
         </ul>
@@ -71,9 +71,9 @@
     <div class="header__wrapper">
       <a class="header__logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="../image/logo-desktop-1.png 1x, ../image/logo-desktop-1@2x.png 2x" width="200"/>
-          <source media="(min-width: 768px)" srcset="../image/logo-tablet-1.png 1x, ../image/logo-tablet-1@2x.png 2x"  width="166"/>
-          <img src="../image/logo-mobile-1.svg" width="96" height="15" alt="Логотип компании" />
+          <source media="(min-width: 1440px)" srcset="../images/logo-desktop-1.png 1x, ../images/logo-desktop-1@2x.png 2x" width="200"/>
+          <source media="(min-width: 768px)" srcset="../images/logo-tablet-1.png 1x, ../images/logo-tablet-1@2x.png 2x"  width="166"/>
+          <img src="../images/logo-mobile-1.svg" width="96" height="15" alt="Логотип компании" />
         </picture>
       </a>
       <button class="header__navigation-button" type="button"></button>
@@ -95,14 +95,27 @@
         </ul>
         <div class="user-list-desktop">
           <a class="user-list__item user-list__phone user-list__item--desktop" href="tel:+78005558628">
-            <img  class="user-list__phone-icon" src="../image/phone.svg" width="16" height="16" alt="Позвонить" />
+            <img  class="user-list__phone-icon" src="../images/phone.svg" width="16" height="16" alt="Позвонить" />
           </a>
           <a class="user-list__item user-list__email user-list__item--desktop" href="mailto:mail@htmlacademy.ru">
-            <img class="user-list__email-icon" src="../image/email.svg" width="14" height="11" alt="Позвонить" />
+            <img class="user-list__email-icon" src="../images/email.svg" width="14" height="11" alt="Позвонить" />
           </a>
           <a class="user-list__login header__login--desktop login" href="#">авторизация</a>
         </div>
       </nav>
+    </div>
+  </header>
+
+  <header class="header-scroll">
+    <div class="header-scroll__wrapper">
+      <a class="header-scroll__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../images/logo-tablet-2.png 1x, ../images/logo-tablet-2@2x.png 2x"  width="164"/>
+          <img src="../images/logo-mobile-2.svg" width="96" height="15" alt="Логотип компании" />
+        </picture>
+      </a>
+      <button class="header-scroll__navigation-button" type="button"></button>
+      <a class="header-scroll__login-tablet login" href="#">авторизация</a>
     </div>
   </header>
 
@@ -113,15 +126,15 @@
 
         <h1 class="hero-mobile__title">В путешествие с крутыми попутчиками!</h1>
         <div class="hero-mobile__image">
-          <img class="hero-mobile__image-planet" src="../image/hero-mobile-background.png" width="100%" height="255" alt="картинка планеты">
-          <img class="hero-mobile__image-man" src="../image/hero-mobile.png" width="60%" height="255" alt="путешественник">
+          <img class="hero-mobile__image-planet" src="../images/hero-mobile-background.png" width="100%" height="255" alt="картинка планеты">
+          <img class="hero-mobile__image-man" src="../images/hero-mobile.png" width="60%" height="255" alt="путешественник">
         </div>
         <div class="hero-mobile__user-list user-list">
           <a class="user-list__item user-list__phone" href="tel:+78005558628">
-            <img class="user-list__phone-icon" src="../image/phone.svg" width="16" height="16" alt="Позвонить" />
+            <img class="user-list__phone-icon" src="../images/phone.svg" width="16" height="16" alt="Позвонить" />
           </a>
           <a class="user-list__item user-list__email" href="mailto:mail@htmlacademy.ru">
-            <img class="user-list__email-icon" src="../image/email.svg" width="14" height="11" alt="Позвонить" />
+            <img class="user-list__email-icon" src="../images/email.svg" width="14" height="11" alt="Позвонить" />
           </a>
           <a class="user-list__login login" href="#">авторизация</a>
         </div>  
@@ -161,29 +174,29 @@
             <blockquote class="hero-tablet__quote-text">«Лучшее приложение,<br /> что я видел в жизни!»</blockquote>
             <figcaption class="hero-tablet__quote-author">Мурат Эльтазин <br />главный редактор газеты<br /> «гаджетлайф»</figcaption>
           </figure>
-          <img class="hero-tablet__image-man" src="../image/hero-tablet.png" width="312" height="451" alt="Картинка путешественника">
+          <img class="hero-tablet__image-man" src="../images/hero-tablet.png" width="312" height="451" alt="Картинка путешественника">
         </div>
         <ul class="hero-tablet__list">
           <div class="hero-tablet__row hero-tablet__row-1">
-          <li class="hero-tablet__item">
-            <span class="hero-tablet__item-text">Выберите <br /> направление</span>
-            <span class="hero-tablet__item-number">1</span>
-          </li>
-          <li class="hero-tablet__item">
-            <span class="hero-tablet__item-text">Изучите идеи<br /> путешественников</span>
-            <span class="hero-tablet__item-number">2</span>
-          </li>
-        </div>
-        <div class="hero-tablet__row hero-tablet__row-2">
-          <li class="hero-tablet__item">
-            <span class="hero-tablet__item-text">Находите тех,<br /> кто похож на вас</span>
-            <span class="hero-tablet__item-number">3</span>
-          </li>
-          <li class="hero-tablet__item">
-            <span class="hero-tablet__item-text">Путешествуйте<br /> вместе!</span>        
-            <span class="hero-tablet__item-number">4</span>
-          </li>
-        </div>
+            <li class="hero-tablet__item">
+              <span class="hero-tablet__item-text">Выберите <br /> направление</span>
+              <span class="hero-tablet__item-number">1</span>
+            </li>
+            <li class="hero-tablet__item">
+              <span class="hero-tablet__item-text">Изучите идеи<br /> путешественников</span>
+              <span class="hero-tablet__item-number">2</span>
+            </li>
+          </div>
+          <div class="hero-tablet__row hero-tablet__row-2">
+            <li class="hero-tablet__item">
+              <span class="hero-tablet__item-text">Находите тех,<br /> кто похож на вас</span>
+              <span class="hero-tablet__item-number">3</span>
+            </li>
+            <li class="hero-tablet__item">
+              <span class="hero-tablet__item-text">Путешествуйте<br /> вместе!</span>        
+              <span class="hero-tablet__item-number">4</span>
+            </li>
+          </div>
         </ul>
         <div class="hero-tablet__square"></div>
       </div>
@@ -222,6 +235,39 @@
       </div>
     </section> 
 
+    <header class="header-scroll-desktop">
+      <div class="header-scroll-desktop__wrapper">
+        <a class="header-scroll-desktop__logo">
+          <img src="../images/logo-desktop-2.png" srcset="../images/logo-desktop-2@2x.png 2x" width="200" height="52" alt="Логотип компании" />
+        </a>
+        <nav class="header-scroll-desktop__navigaion">
+          <ul class="header-scroll-desktop__navigaion-list">
+            <li class="header-scroll-desktop__navigaion-item">
+              <a class="header-scroll-desktop__navigaion-link" href="#service">
+                <span class="header-scroll-desktop__navigaion-link--hover" data-hover="о сервисе">о сервисе</span></a>
+            </li>
+            <li class="header-scroll-desktop__navigaion-item">
+              <a class="header-scroll-desktop__navigaion-link" href="#direction">
+                <span class="header-scroll-desktop__navigaion-link--hover" data-hover="направления">направления</span></a>
+            </li>
+            <li class="header-scroll-desktop__navigaion-item">
+              <a class="header-scroll-desktop__navigaion-link" href="#companion">
+                <span class="header-scroll-desktop__navigaion-link--hover" data-hover="попутчики">попутчики</span></a>
+            </li>
+          </ul>
+          <div class="user-list-desktop">
+            <a class="user-list__item user-list__phone user-list__item--desktop" href="tel:+78005558628">
+              <img  class="user-list__phone-icon" src="../images/phone.svg" width="16" height="16" alt="Позвонить" />
+            </a>
+            <a class="user-list__item user-list__email user-list__item--desktop" href="mailto:mail@htmlacademy.ru">
+              <img class="user-list__email-icon" src="../images/email.svg" width="14" height="11" alt="Позвонить" />
+            </a>
+            <a class="header-scroll-desktop__login--desktop login" href="#">авторизация</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <section class="service" id="service">
       <div class="service__wrapper">
         <div class="service__block">
@@ -229,13 +275,13 @@
           <p class="service__info">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
           <p class="service__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
           <a class="service__button button" href="#">Подробнее
-            <img src="../image/triangle-3.svg" width="13" height="14" alt="Перейти"/>
+            <img src="../images/triangle-3.svg" width="13" height="14" alt="Перейти"/>
           </a>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="../image//service_desktop.png 1x, ../image//service_desktop@2x.png 2x" width="630 /">
-          <source media="(min-width: 768px)" srcset="../image/service_tablet.png 1x, ../image//service_tablet@2x.png 2x"  width="376" />
-          <img class="service__picture" src="../image/service.png" width="630" height="665" alt="профиль попутчика" />
+          <source media="(min-width: 1440px)" srcset="../images//service_desktop.png 1x, ../images/service_desktop@2x.png 2x" width="630 /">
+          <source media="(min-width: 768px)" srcset="../image/service_tablet.png 1x, ../images/service_tablet@2x.png 2x"  width="376" />
+          <img class="service__picture" src="../images/service.png" width="630" height="665" alt="профиль попутчика" />
         </picture>
         <div class="service__picture-square"></div>
       </div>
@@ -248,7 +294,7 @@
           <h2 class="diection__title title">Направления</h2>
           <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться. </p>
           <a class="direction__button-desktop button" href="form.html">Показать все
-            <img src="../image/triangle-3.svg" width="13" height="14" alt="Перейти"/>
+            <img src="../images/triangle-3.svg" width="13" height="14" alt="Перейти"/>
           </a>
         </div>
 
@@ -260,10 +306,10 @@
                 <span class="direction__item-text">Джунгли зовут!</span>
               </div>
               <div class="direction__item-quantity">
-                <img  class="direction__item-quantity-icon" src="../image/person.svg" width="14" height="14" alt="иконка человека"/>
+                <img  class="direction__item-quantity-icon" src="../images/person.svg" width="14" height="14" alt="иконка человека"/>
                 <span class="direction__item-quantity-number">18321</span>
               </div>
-              <img class="direction__item-flag" src="../image/flag-of-thailand.png" width="35" height="24" alt="Флаг Тайланда" />
+              <img class="direction__item-flag" src="../images/flag-of-thailand.png" width="35" height="24" alt="Флаг Тайланда" />
             </div>
           </li>
 
@@ -274,10 +320,10 @@
                 <span class="direction__item-text">Трэ бьен, манифик!</span>
               </div>
               <div class="direction__item-quantity">
-                <img class="direction__item-quantity-icon" src="../image/person.svg" width="14" height="14" alt="иконка человека"/>
+                <img class="direction__item-quantity-icon" src="../images/person.svg" width="14" height="14" alt="иконка человека"/>
                 <span class="direction__item-quantity-number">12518</span>
               </div>
-              <img class="direction__item-flag" src="../image/flag-of-france.png" width="35" height="24" alt="Флаг Франции" />
+              <img class="direction__item-flag" src="../images/flag-of-france.png" width="35" height="24" alt="Флаг Франции" />
             </div>
           </li>
 
@@ -289,16 +335,16 @@
                   <span class="direction__item-text">Закоулки старой Европы</span>
                 </div>
                 <div class="direction__item-quantity">
-                  <img class="direction__item-quantity-icon" src="../image/person.svg" width="14" height="14" alt="иконка человека"/>
+                  <img class="direction__item-quantity-icon" src="../images/person.svg" width="14" height="14" alt="иконка человека"/>
                   <span class="direction__item-quantity-number">5326</span>
                 </div>
-                <img class="direction__item-flag" src="../image/flag-of-czech-republic.png" width="35" height="24" alt="Флаг Чехии" />
+                <img class="direction__item-flag" src="../images/flag-of-czech-republic.png" width="35" height="24" alt="Флаг Чехии" />
               </div>
             </li>
           </div>
         </ul>
         <a class="direction__button-mobile button" href="form.html">Показать все
-          <img src="../image/triangle-3.svg" width="13" height="14" alt="Перейти"/>
+          <img src="../images/triangle-3.svg" width="13" height="14" alt="Перейти"/>
         </a>
         <div class="direction__picture-square"></div>
         <div class="direction__picture-1"></div>
@@ -313,15 +359,15 @@
           <p class="companion__info">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
           <p class="companion__text">Теперь можно легко найти единомышленников!</p>
           <a class="companion__button-desktop button" href="catalog.html">Показать всех
-            <img src="../image/triangle-3.svg" width="13" height="14" alt="Перейти"/>
+            <img src="../images/triangle-3.svg" width="13" height="14" alt="Перейти"/>
           </a>
         </div>
 
         <div class="companion__cards">
           <div class="companion__card card">
             <picture>
-              <source media="(min-width: 768px)" srcset="../image/card-tablet-1.jpg 1x, ../image/card-tablet-1@2x.jpg 2x" />
-              <img class="card__img" src="../image/card-mobile-1.jpg" srcset="../image/card-mobile-1@2x.jpg 2x" width="270" height="270" alt="Второй профиль" />
+              <source media="(min-width: 768px)" srcset="../images/card-tablet-1.jpg 1x, ../images/card-tablet-1@2x.jpg 2x" />
+              <img class="card__img" src="../images/card-mobile-1.jpg" srcset="../images/card-mobile-1@2x.jpg 2x" width="270" height="270" alt="Второй профиль" />
             </picture>
             <div class="card__info">
               <h3 class="card__title card__title-woman">Таня Фирсова</h3>
@@ -358,15 +404,15 @@
               </div>
               <ul class="card__countries-list">
                 <li class="card__countries-item">
-                  <img src="../image/Sri-Lanka.png" width="35" height="24"  alt="Флаг Шри-Ланки"/>
+                  <img src="../images/Sri-Lanka.png" width="35" height="24"  alt="Флаг Шри-Ланки"/>
                   <span class="card__countries-text">Шри-Ланка</span>
                 </li>
                 <li class="card__countries-item">
-                  <img src="../image/flag-of-thailand.png" width="35" height="24" alt="Флаг Тайланда"/>
+                  <img src="../images/flag-of-thailand.png" width="35" height="24" alt="Флаг Тайланда"/>
                   <span class="card__countries-text">Тайланд</span>
                 </li>
                 <li class="card__countries-item">
-                  <img src="../image/Seychelles.png" width="35" height="24" alt="Флаг Сейшел"/>
+                  <img src="../images/Seychelles.png" width="35" height="24" alt="Флаг Сейшел"/>
                   <span class="card__countries-text">Сейшелы</span>
                 </li>
               </ul>
@@ -386,8 +432,8 @@
 
           <div class="companion__card card">
             <picture>
-              <source media="(min-width: 768px)" srcset="../image/card-tablet-2.jpg 1x, ../image/card-tablet-2@2x.jpg 2x" />
-              <img class="card__img" src="../image/card-mobile-2.jpg" srcset="../image/card-mobile-2@2x.jpg 2x" width="270" height="270" alt="Второй профиль" />
+              <source media="(min-width: 768px)" srcset="../images/card-tablet-2.jpg 1x, ../images/card-tablet-2@2x.jpg 2x" />
+              <img class="card__img" src="../images/card-mobile-2.jpg" srcset="../images/card-mobile-2@2x.jpg 2x" width="270" height="270" alt="Второй профиль" />
             </picture>
             <div class="card__info">
               <h3 class="card__title card__title-man">Петя Демин</h3>
@@ -424,11 +470,11 @@
               </div>
               <ul class="card__countries-list">
                 <li class="card__countries-item">
-                  <img src="../image/Belgium.png" width="35" height="24"  alt="Флаг Бельгии"/>
+                  <img src="../images/Belgium.png" width="35" height="24"  alt="Флаг Бельгии"/>
                   <span class="card__countries-text">Бельгия</span>
                 </li>
                 <li class="card__countries-item">
-                  <img src="../image/flag-of-czech-republic.png" width="35" height="24"  alt="Флаг Чехии"/>
+                  <img src="../images/flag-of-czech-republic.png" width="35" height="24"  alt="Флаг Чехии"/>
                   <span class="card__countries-text">Чехия</span>
                 </li>
               </ul>
@@ -446,7 +492,7 @@
           </div>
         </div>
         <a class="companion__button-mobile button" href="catalog.html">Показать всех
-          <img src="../image/triangle-3.svg" width="13" height="14" alt="Перейти"/>
+          <img src="../images/triangle-3.svg" width="13" height="14" alt="Перейти"/>
         </a>
         <div class="companion__picture-square"></div>
         <div class="companion__picture-foto-1"></div>
@@ -459,7 +505,7 @@
       <div class="price__wrapper">
         <div class="price__inner">
           <h2 class="price__title title">Добавьте <br class="price__break" /> свой<br class="price__break" /> профиль</h2>
-          <img class="price__img" src="../image/price.png" width="100" height="100" alt="цена" />
+          <img class="price__img" src="../images/price.png" width="100" height="100" alt="цена" />
         </div>
         <div class="price__block-mobile price-mobile">
           <div class="price-mobile__features">
@@ -504,14 +550,14 @@
             <span class="price-tablet__tariff-text">Бесплатно</span>
             <span class="price-tablet__tariff-text">99 руб./мес</span>
             <span class="price-tablet__tariff-text">59 руб./мес</span>
-            <img class="price-tablet__tariff-img" src="../image/price.png" width="100" height="100" alt="цена" />
+            <img class="price-tablet__tariff-img" src="../images/price.png" width="100" height="100" alt="цена" />
           </div>
         </div>
 
 
         <div class="price__bisness">
           <div class="price__bisness-img">
-            <img class="price__bisness-icon" src="../image/tariff.svg" width="27" height="27" alt="Иконка для тарифа" />
+            <img class="price__bisness-icon" src="../images/tariff.svg" width="27" height="27" alt="Иконка для тарифа" />
           </div>
           <a class="price__bisness-link">Показать тарифы для бизнеса</a>
         </div>
@@ -562,7 +608,7 @@
       <div class="location__wrapper">
         <div class="location__inner">
           <div class="location__img">
-            <img class="location__icon" src="../image/local.svg" width="21" height="21" alt="Местонахождение" />
+            <img class="location__icon" src="../images/local.svg" width="21" height="21" alt="Местонахождение" />
           </div>
           <address class="location__address">ул. Большая <br class="location__address-break"> Конюшенная, 19/8</address>
         </div>
@@ -580,30 +626,30 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <picture>
-        <source media="(min-width: 1440px)" srcset="../image/logo-desktop-2.png 1x, ../image/logo-desktop-2@2x.png 2x" width="200"/>
-        <source media="(min-width: 768px)" srcset="../image/logo-tablet-2.png 1x, ../image/logo-tablet-2@2x.png 2x"  width="164"/>
-        <img class="footer__logo" src="../image/logo-mobile-2.svg" width="96" height="15" alt="Логотип компании" />
+        <source media="(min-width: 1440px)" srcset="../images/logo-desktop-2.png 1x, ../images/logo-desktop-2@2x.png 2x" width="200"/>
+        <source media="(min-width: 768px)" srcset="../images/logo-tablet-2.png 1x, ../images/logo-tablet-2@2x.png 2x"  width="164"/>
+        <img class="footer__logo" src="../images/logo-mobile-2.svg" width="96" height="15" alt="Логотип компании" />
       </picture>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link" href="#">
-            <img src="../image/facebook.svg" width="13" height="27" alt="facebook"/>
+            <img src="../images/facebook.svg" width="13" height="27" alt="facebook"/>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-link" href="#">
-            <img src="../image/vk.svg" width="30" height="16" alt="Вконтакте"/>
+            <img src="../images/vk.svg" width="30" height="16" alt="Вконтакте"/>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-link" href="#">
-            <img class="footer__social-icon" src="../image/instagram.svg" width="24" height="24" alt="instagram"/>
+            <img class="footer__social-icon" src="../images/instagram.svg" width="24" height="24" alt="instagram"/>
           </a>
         </li>
       </ul>
       <a class="footer__copyright-link" href="https://htmlacademy.ru/">
         <span class="footer__copyright-link-text">Разработано</span>
-        <img src="../image/html-academy.svg" width="27" height="34"  alt="иконка разработчика" />
+        <img src="../images/html-academy.svg" width="27" height="34"  alt="иконка разработчика" />
       </a>
     </div>
   </footer>
