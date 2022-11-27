@@ -1,0 +1,77 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1D2E5B;
+  background: #FFD74B;
+  border-radius: 10px;
+
+  @media (min-width:768px) {
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;  
+  color: #FF8D30;
+
+  @media (min-width:768px) {
+    font-size: 45px;
+  }
+}
+
+.login {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.76;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161C35;
+  background: #FFD74B;
+  border-radius: 25px;
+
+  &:hover {
+    background: #FFBD30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+    background: #FFBD30;
+  }
+}
+
+.contaner-catalog {
+  background: #EDEFF6;
+}
+
+.catalog-box {
+  display: block;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+

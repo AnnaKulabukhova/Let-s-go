@@ -1,0 +1,128 @@
+.profile-desktop {
+	display: none;
+
+	@media (min-width: 1440px) {
+		position: relative;
+		display: block;
+    background: #EDEFF6;
+		margin-top: -60px;
+  }
+
+	&__wrapper {
+		padding-top: 62px; 
+		padding-left: 124px; 
+		padding-right: 60px;
+		padding-bottom: 105px;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		display: block;
+		padding: 20px 50px;
+		margin-left: auto;
+		margin-right: 53px;
+		margin-bottom: 27px;
+		width: 190px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #161C35;
+		background: #DFE3F0;
+		border-radius: 0  0 10px 10px;
+		border: none;
+
+		&:hover {
+			background:  #D1D7E9;
+		}
+
+		&:active {
+			background:   #DFE3F0;
+			color: rgba(22, 28, 53, 0.3);
+		}
+	}
+
+	&__title {
+		transform: rotate(180deg);
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 20px;
+		letter-spacing: 0.07em;
+		text-align: center;
+		text-transform: uppercase;
+		color: #1D2E5B;
+	}
+
+	&__title-tag {
+		text-align: right;
+	}
+
+	&__tag {
+		box-sizing: border-box;
+		width: 732px;
+		padding: 36px 39px 25px;
+	}
+
+	&__text {
+		display: flex;
+		justify-self: right;
+		justify-content: left;
+		transform: rotate(180deg);
+		max-width: 100%;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 22px;
+		opacity: 0.6;
+		background-color: transparent;
+		border: none;
+	}
+
+	&__transport {
+		width: 384px;
+		padding: 0;
+	}
+
+	&__transport-block {
+		transform: rotate(180deg);
+		display: flex;
+		justify-content: center;
+		padding: 26px 68px 15px;
+	}
+
+	&__transport-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		background-color: #FFFFFF;
+		border-radius: 50%;
+
+		&:active {
+			opacity: 0.3;
+		}
+	}
+
+	&__transport-icon:hover {
+		opacity: 0.7;
+	}
+}
+
+.frame-desktop {
+	transform: rotate(180deg);
+	border:1px solid #CBCED9;
+	border-radius: 10px;
+
+	&:hover {
+		border:1px solid #AEB4CB;
+	}
+	&:active {
+		background: #161C35;
+	}
+}

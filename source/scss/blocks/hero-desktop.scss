@@ -1,0 +1,121 @@
+.hero-desktop {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    background-color: #161C35;
+    background-image: url("../images/hero-desktop-background.png");
+  }
+
+  &__wrapper {
+    padding: 11px 60px 120px;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 0;
+    background-image: url("../images/hero.svg");
+    width: 430px;
+    height: 640px;
+    left: 500px;
+  }
+
+  &__title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 67px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: #FFFFFF;
+  }
+
+  &__quote {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 23px;
+    margin-top: 100px;
+    color: #FFFFFF;
+  }
+
+  &__quote-text {
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  &__quote-author {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 107px;
+    border-radius: 20px;
+    padding-left: 34px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-right: 50px;
+    
+    &:nth-child(1) {
+      width: 345px;
+      background-color: #FF8D30;
+    }
+    
+    &:nth-child(2) {
+      margin-left: -30px;
+      width: 375px;
+      background-color: #FFA530;
+    }
+
+    &:nth-child(3) {
+      margin-left: -30px;
+      width: 375px;
+      background-color: #FFBD30;
+    }
+
+    &:nth-child(4) {
+      margin-left: -30px;
+      width: 315px;
+      background-color: #FFD74B;
+    }
+  }
+
+  &__item-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #161C35;
+  }
+
+  &__item-number {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}

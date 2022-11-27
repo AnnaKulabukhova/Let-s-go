@@ -1,0 +1,139 @@
+.modal-bisness {
+  width: calc(100% - 50px);
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 80px);
+  }
+
+  @media (min-width: 1440px) {
+    width: 750px;
+  }
+
+  &__wrapper {
+    padding: 0 25px;
+
+    @media (min-width: 768px) {
+      padding: 0 90px;
+    }
+    
+    @media (min-width: 1440px) {
+      padding: 0 58px;
+    }
+  }  
+
+  &__title {
+    margin-bottom: 39px;
+    text-align: center;
+    
+    @media (min-width: 768px) {
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 58px;
+    }
+  }
+
+  &__price {
+    position: relative;
+    display:block;
+    margin-bottom: 22px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 27px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: -11px;
+      color: #000000;
+
+      @media (min-width: 768px) {
+        top: -14px;
+      }
+
+      @media (min-width: 1440px) {
+        top: -12px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 55px;
+        color: rgba(0, 0, 0, 0.05);
+      
+        @media (min-width: 768px) {
+          top: 40px;
+        }
+
+        @media (min-width: 1440px) {
+          top: 42px;
+        }
+      }
+    }
+  }
+
+  &__price-text {
+    display:block;
+    font-size: 16px;
+    line-height: 22px;
+
+     @media (min-width: 768px) {
+      display: flex;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 45px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background: #F3F4F8;
+    border: transparent;
+    border-radius: 0 0 20px 20px;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1;
+      margin-top: 64px;
+      padding-top: 41px;
+      padding-bottom: 41px;
+    }  
+
+    @media (min-width: 1440px) {
+      margin-top: 67px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    &:hover {
+      background:  #EDEFF6;
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+      background:  #EDEFF6;
+    }
+  }
+}

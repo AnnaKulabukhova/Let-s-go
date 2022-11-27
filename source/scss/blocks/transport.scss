@@ -1,0 +1,78 @@
+.card-transport {
+  position: relative;
+}
+
+.card-transport:last-child {
+  margin-right: 0px;
+}
+
+.profile__transport-img {
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.transport-img path {
+  background: #1D2E5B;
+  opacity: 0.15;
+}
+
+.transport-img--add path {
+  background: #1D2E5B;
+  opacity: 1;
+}
+
+.transport-text {
+  display: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/triangle-1.svg");
+    width: 16px;
+    height: 10px;
+    top: -7px;
+    left: 78px;
+  }
+}
+
+.card-transport:hover .transport-text {
+  position: absolute;
+  top: 30px;
+  left: -75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #101D41;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.card-transport:hover .transport-text-form {
+  top: 40px;
+  left: -70px;
+  z-index: 2;
+}
+
+.card-transport:hover .transport-text-form-tablet {
+  top: 50px;
+  left: -65px;
+}
+
+.card-transport:hover .control__transport-text {
+  top: 50px;
+  left: -65px;
+  z-index: 2;
+}
+
+.card-transport:hover .control-tablet__transport-text {
+  top: 50px;
+  left: -65px;
+  z-index: 2;
+}
